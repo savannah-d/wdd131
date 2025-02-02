@@ -33,8 +33,9 @@ function viewHandler(event) {
     // Log the image src to check the path
     console.log(imageSrc);
     
-    const imageNameParts = imageSrc.split("-");
-    const fullImageSrc = imageNameParts[0] + "-full.jpeg"; 
+    const fullImageSrc = imageSrc.replace("-sm", "-full");
+
+    console.log("Full image path:", fullImageSrc);
 
     // Create the modal HTML and insert it
     const modalHTML = viewerTemplate(fullImageSrc, clickedImage.alt);
