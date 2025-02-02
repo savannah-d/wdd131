@@ -34,7 +34,7 @@ function viewHandler(event) {
     console.log(imageSrc);
     
     const imageNameParts = imageSrc.split("-");
-    const fullImageSrc = imageNameParts[0] + "-full.jpeg"; // Assuming this is correct for your naming convention
+    const fullImageSrc = imageNameParts[0] + "-full.jpeg"; 
 
     // Create the modal HTML and insert it
     const modalHTML = viewerTemplate(fullImageSrc, clickedImage.alt);
