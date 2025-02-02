@@ -118,17 +118,16 @@ footer {
         display: none;
     }
 
-    /* Modal Styling */
     .viewer {
-        padding: 3rem; /* Add padding to the viewer for large screens */
-        max-width: 80%; /* Limit the modal's width */
+        padding: 3rem; 
+        max-width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        background-color: rgba(0, 0, 0, 0.75); /* Overlay background */
+        background-color: rgba(0, 0, 0, 0.75); 
         visibility: hidden;
-        margin: 5% 10%; /* Add margin on both sides to create space */
+        margin: 5% 10%; 
     }
 
     .viewer.show {
@@ -145,7 +144,6 @@ footer {
 
     }
 
-    /* Close button adjustment */
     .viewer .close-viewer {
         position: absolute;
         top: 2rem;
