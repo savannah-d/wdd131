@@ -24,8 +24,7 @@ main {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr; 
 }
 nav {
     border-bottom: 0.0625rem solid var(--primary-color);
