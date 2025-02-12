@@ -1,9 +1,9 @@
 const steps = ["one", "two", "three"];
-const listTemplate(step) {
+function listTemplate(step) {
   return `<li>${step}</li>`;
 }
 const stepsHtml = steps.map(listTemplate);
-document.querySelector("#myList").innerHTML = stepHtml.join()
+document.querySelector("#myList").innerHTML = stepsHtml.join();
 
 const grades = ["A", "B", "A"];
 function convertGradeToPoints(grade) {
