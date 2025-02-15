@@ -68,8 +68,22 @@ aside {
     color: var(--text-dark);
     justify-items: right;
     align-self: start; /* Keeps aside at the top of the column */
-    padding-right: 1rem; /* Add spacing */
+    padding-right: 5rem; /* Add spacing */
 }
 .highlight {
     color: var(--secondary-color);
+}
+.skiptocontent a {
+    position: absolute;
+    top: -40px; /* Moves it off-screen */
+    left: 0;
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skiptocontent a:focus {
+    top: 0; /* Moves it back on-screen when focused */
 }
