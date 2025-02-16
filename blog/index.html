@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Charset Attribute -->
     <meta charset="UTF-8">
-
-    <!-- Title Element -->
     <title>Kids Read for Fun</title>
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Meta Description Element -->
     <meta name="description" content="This is a website dedicated to finding books that are suitable for young adults. Parents can publish book reviews.">
-
-    <!-- Meta Author Element -->
     <meta name="author" content="Savannah Dobbins">
-
-    <!-- Link reference to CSS file -->
     <link rel="stylesheet" href="blog.css">
+    <script src="articles.js" defer></script>
+    <script src="blog.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,6 +17,7 @@
             <a href="#maincontent">skip to main content</a>
         </div>
     </header>  
+
     <nav>
         <ul>
             <li><a href="#">About</a></li>
@@ -32,23 +25,49 @@
             <li><a href="#">Search</a></li>
         </ul>
     </nav>
+
     <main id="maincontent">
         <div class="content-wrapper">
-            <section id="review-details">
-                <p>July 5, 2022</p>
-                <p>10-14</p>
-                <p>Fantasy</p>
-                <p>****</p>
-            </section>
-            <section id="book-info">
-                <h2>Septimus Heap Book One: Magyk</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book Cover for Magyk">
-                <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you. <span class="highlight">Read More...</span></p>
-            </section>
+            <div class="book-section">
+                <!--First book entry-->
+                <div class="book-entry">
+                    <section class="review-details" tabindex="0">
+                        <p>July 5, 2022</p>
+                        <p>10-14</p>
+                        <p>Fantasy</p>
+                        <p>⭐⭐⭐⭐</p>
+                    </section>
+                    <section class="book-info" tabindex="0">
+                        <h2>Septimus Heap Book One: Magyk</h2>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book Cover for Magyk">
+                        <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you. <span class="highlight">Read More...</span></p>
+                    </section>
+                </div>
+
+                    <!--Second book-->
+                <div class="book-entry">
+                    <section class="review-details" tabindex="0">
+                        <p>December 12, 2021</p>
+                        <p>12-16</p>
+                        <p>Fantasy</p>
+                        <p>⭐⭐⭐⭐</p>
+                    </section>
+                    <section class="book-info" tabindex="0">
+                        <h2>Magnus Chase Book One: Sword of Summer</h2>
+                        <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300" alt="Book Cover for Magnus Chase 1">
+                        <p>The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), 
+                        Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to 
+                        try his hand with Norse mythology, and the end result is good. 
+                        <span class="highlight">Read More...</span>
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <aside>
+                <p>Filters will go here</p>
+            </aside>
         </div>
-        <aside>
-            <p>Filters will go here</p>
-        </aside>
     </main>
 </body>
 </html>
