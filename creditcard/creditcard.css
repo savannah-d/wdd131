@@ -50,7 +50,6 @@ body {
 }
 .input-group {
     display: grid;
-    align-items: start;
 }
 .payment-form label {
     font-size: 14px;
