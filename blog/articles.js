@@ -1,7 +1,6 @@
-// Get reference to the element where articles should be inserted
+
 const articleContainer = document.querySelector(".content-wrapper");
 
-// Function to create an article HTML string
 function generateArticleHTML(article) {
     return `
         <div class="book-entry">
@@ -20,7 +19,6 @@ function generateArticleHTML(article) {
     `;
 }
 
-// Loop through articles array and insert into the DOM
 articles.forEach(article => {
     articleContainer.innerHTML += generateArticleHTML(article);
 });
