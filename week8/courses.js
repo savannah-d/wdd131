@@ -59,14 +59,14 @@ const aCourse = {
     document.querySelector("#sections").innerHTML = html.join("");
   }
   document.querySelector("#enrollStudent").addEventListener("click", function () {
-    const sectionNum = document.querySelector("#sectionNumber").value;
-    aCourse.enrollStudent(sectionNum);
-  });
-  document.querySelector("#dropStudent").addEventListener("click", function () {
-    const sectionNum = document.querySelector("#sectionNumber").value;
-    aCourse.dropStudent(sectionNum);
-  });
-  
+  const sectionNum = document.querySelector("#sectionNumber").value;
+  aCourse.enrollStudent(sectionNum);
+});
+document.querySelector("#dropStudent").addEventListener("click", function () {
+  const sectionNum = document.querySelector("#sectionNumber").value;
+  aCourse.dropStudent(sectionNum);
+});
+
   
   setCourseInfo(aCourse);
   renderSections(aCourse.sections);
