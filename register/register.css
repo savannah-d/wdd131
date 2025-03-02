@@ -91,7 +91,6 @@
     width: 48%;
   }
 
-  /* Style checkbox and radio. To do this we have to hide the defaults then we create our own */
   input[type="radio"] {
     display: none;
   }
@@ -136,7 +135,7 @@
   input[type="radio"]:checked + label:after {
     opacity: 1;
   }
-  /* end style checkbox and radio */
+
   .btn-block {
     margin-top: 10px;
     text-align: center;
@@ -158,5 +157,24 @@
     .columns div {
       width: 100%;
     }
+  }
+
+  .participants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .participant {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 102, 34, 0.3);
+  }
+  
+  #add {
+    grid-column: span 2;
+    text-align: center;
   }
   
