@@ -1,10 +1,55 @@
 <head>
     <meta charset="UTF-8">
-    <title>Your Website Title</title>
+    <title>Recipe Book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Short description of the site">
+    <meta name="description" content="Share your favorite recipes and find new ones.">
     <meta name="author" content="Your Name">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="recipes.css">
     <script src="main.js" defer></script>
 </head>
+<header class="header">    
+    <img src="recipe-book.png" alt="Recipe Book Logo" class="logo">
+    <span class="title">Recipe Book</span>
+</header>
+<main>
+    <div class="search-bar">
+        <div class="search-container">
+            <input type="text" placeholder="Find a recipe">
+            <button><img src="search.svg" alt="Search"></button>
+        </div>
+    </div>
+    <div class="recipe">
+        <img src="apple-crisp.jpg" alt="Sweet potato waffle image" class="recipe-image">
+
+        <div class="tags">
+            <span class="tag">Dessert</span>
+        </div>
+        <h2 class="recipe-title">Apple Crisp</h2>
+        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+        <p class="recipe-description">
+                A warm, spiced apple dessert with a crispy oat topping. Perfect with vanilla ice cream!
+            </p>
+    </div>
+</main>
+<footer class="footer">
+    <span>©2023</span>
+    <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+        <a href="#"><img src="instagram_icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="youtube_icon.svg" alt="YouTube"></a>
+        <a href="#"><img src="pinterest_icon.svg" alt="Pinterest"></a>
+    </div>
+    <p class="attribution">
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            Recipe icons created by Freepik - Flaticon
+        </a>
+    </p>
+        
+</footer>

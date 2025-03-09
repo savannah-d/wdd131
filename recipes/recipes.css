@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Fraunces&family=Mooli&display=swap');
+
+/* Global Styles */
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Edu NSW ACT Foundation', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: center;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    padding: 50;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Makes it span full container width */
+    border: 1px solid; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures clean edges */
+    max-width: 90%; /* Adjust as needed */
+    margin: 10px auto; /* Adds space on all sides */
+}
+
+.search-container input {
+    flex: 1; /* Takes up all available space */
+    border: none; /* Removes default border */
+    padding: 10px;
+    font-size: 20px;
+    outline: none; /* Removes focus outline */
+}
+
+.search-container input::placeholder {
+    color: gray;
+}
+
+.search-container button {
+    background: white; /* Matches background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container button img {
+    width: 18px; /* Adjust search icon size */
+    height: 18px;
+}
+
+.recipe {
+    border: solid;
+    max-width: 90%; /* Adjust as needed */
+    margin: 10px auto; /* Adds space on all sides */
+    border: 1px solid; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.recipe img {
+    width: 25rem;
+}
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+.attribution {
+    font-size: 0.6em;
+}
+
+img {
+	max-width: 100%;
+}
