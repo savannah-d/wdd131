@@ -78,6 +78,8 @@ header img {
     margin: 10px auto; /* Adds space on all sides */
     border: 1px solid; /* Light border */
     border-radius: 8px; /* Rounded corners */
+    display: flex;
+    justify-content: flex-start;
 }
 
 .recipe img {
