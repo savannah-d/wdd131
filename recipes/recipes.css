@@ -79,12 +79,30 @@ header img {
     border: 1px solid; /* Light border */
     border-radius: 8px; /* Rounded corners */
     display: flex;
-    justify-content: flex-start;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 25px;
 }
 
 .recipe img {
     width: 25rem;
 }
+
+.tags {
+    border: solid;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.recipe-title {
+    font-family: var(--secondary-font);
+    color: #02A4D9;
+}
+
+.recipe-description {
+    display: none;
+}
+
 footer {
     margin-top: 2rem;
     padding: 1rem;
@@ -106,8 +124,19 @@ footer {
 
 .attribution {
     font-size: 0.6em;
+    text-decoration: none;
 }
 
 img {
 	max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
 }
