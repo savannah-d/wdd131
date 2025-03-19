@@ -37,20 +37,20 @@ header img {
 .search-container {
     display: flex;
     align-items: center;
-    width: 100%; /* Makes it span full container width */
-    border: 1px solid; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden; /* Ensures clean edges */
-    max-width: 90%; /* Adjust as needed */
-    margin: 10px auto; /* Adds space on all sides */
+    width: 100%; 
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden; 
+    max-width: 90%; 
+    margin: 10px auto; 
 }
 
 .search-container input {
-    flex: 1; /* Takes up all available space */
-    border: none; /* Removes default border */
+    flex: 1;
+    border: none; 
     padding: 10px;
     font-size: 20px;
-    outline: none; /* Removes focus outline */
+    outline: none;
 }
 
 .search-container input::placeholder {
@@ -58,7 +58,7 @@ header img {
 }
 
 .search-container button {
-    background: white; /* Matches background */
+    background: white; 
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -68,20 +68,22 @@ header img {
 }
 
 .search-container button img {
-    width: 18px; /* Adjust search icon size */
+    width: 18px;
     height: 18px;
 }
 
 .recipe {
     border: solid;
-    max-width: 90%; /* Adjust as needed */
-    margin: 10px auto; /* Adds space on all sides */
-    border: 1px solid; /* Light border */
-    border-radius: 8px; /* Rounded corners */
+    max-width: 90%;
+    margin: 10px auto; 
+    border: 1px solid; 
+    border-radius: 8px; 
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     padding: 25px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .recipe img {
@@ -92,6 +94,7 @@ header img {
     border: solid;
     padding: 5px;
     margin-top: 5px;
+    width: 55px;
 }
 
 .recipe-title {
@@ -118,8 +121,8 @@ footer {
 }
 
 .social img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .attribution {
@@ -134,6 +137,18 @@ img {
 @media screen and (min-width: 600px) {
     .recipe {
         flex-direction: row;
+    }
+    .recipe-info {
+        display: column;
+        gap: 5px;
+        align-items: flex-start;
+        margin: 15px;
+    }
+    .recipe-title, .rating, .tags, .recipe-description {
+        display: flex;
+    }
+    .recipe-description {
+        text-align: start;
     }
 }
 
